@@ -1,0 +1,26 @@
+.navModule{
+    background-color: #c3b6a1;
+    color: #282725;
+    box-shadow: 0 0 15px rgba(0,0,0,0.3);
+}
+.spanModule{
+    color: #282725;
+    font-size: 25px;
+    font-weight: 500;
+    margin: 15px;
+}
+.spanModule a{
+    text-decoration: none;
+    color: #282725;
+}
+
+.navBarLink{
+    padding: 0 8%;
+    text-decoration: none;
+    list-style-type: none;
+    font-size: 18px;
+    color:#282725;
+}
+.navBarLink:hover{
+    text-decoration: underline #9b8e78;
+}
