@@ -1,0 +1,27 @@
+.window {
+  position: relative;
+  border: 1px solid blue;
+  background-color: blue;
+  width: 200px;
+  height: 100px;
+  overflow: hidden;
+}
+
+.row {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  display: flex;
+  /* transform: translateX(-${p => p.$index * 100}px); */
+  transition: all 1s ease;
+}
+
+.image {
+  display: flex;
+  justify-content: center;
+  width: 100px;
+  height: 100px;
+  background-color: red;
+  padding: 10px;
+  border: 1px solid black;
+}
