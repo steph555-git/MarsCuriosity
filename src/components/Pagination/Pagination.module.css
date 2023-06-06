@@ -20,5 +20,7 @@
   color:#ffff;
 }
 .pagination {
+  display: flex;
+  justify-content: end;
   list-style-type : none;
 }

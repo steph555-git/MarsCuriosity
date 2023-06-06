@@ -17,7 +17,7 @@ const Pagination = ({ imagePerPage, totalImages, paginate }) => {
         pageNumbers.push(i);
     }
     return (
-        <ul className={styles.pagination} style={{ display: 'flex' }}>
+        <ul className={styles.pagination}>
             {pageNumbers.map(number => (
                 <li
                     key={number}

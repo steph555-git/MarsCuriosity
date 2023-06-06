@@ -3,8 +3,6 @@ import SearchByDate from '../../components/SearchByDate/SearchByDate'
 import ImagesMosaic from '../../components/ImagesMosaic/ImagesMosaic'
 import Pagination from '../../components/Pagination/Pagination'
 
-import './Images.module.css'
-
 const Images = () => {
     const [currentInputDate, setCurrentInputDate] = useState('');
     const [allDataFromAPIMarsRover, setAllDataFromAPIMarsRover] = useState([]);
@@ -23,7 +21,6 @@ const Images = () => {
             fetch(`https://api.nasa.gov/mars-photos/api/v1/rovers/curiosity/photos?earth_date=${currentInputDate}&api_key=8S0Zp1SfdyLGBP92bA30026ljWwX4XKaIgsXpHOx&page=1`)
                 .then(resp => resp.json())
                 .then(resp => {
-
                     setAllDataFromAPIMarsRover(resp.photos)
                 })
                 .catch(error => console.log('data access error'))
@@ -36,7 +33,8 @@ const Images = () => {
         <>
             <h2>Mars Images By Date</h2>
             <SearchByDate setCurrentInputDate={setCurrentInputDate} />
-            {allDataFromAPIMarsRover === [] ? <div style={{ color: 'red' }}>No data at this date...</div> : <ImagesMosaic marsRoverPhotos={currentMarsRoverImages} />}
+            {/*allDataFromAPIMarsRover === [] ? <div style={{ color: 'red' }}>No data at this date...</div> : <ImagesMosaic marsRoverPhotos={currentMarsRoverImages} />*/}
+            <ImagesMosaic marsRoverPhotos={currentMarsRoverImages} />
             <div style={{ textAlign: 'right' }}>
                 <Pagination
                     imagePerPage={imagePerPage}
