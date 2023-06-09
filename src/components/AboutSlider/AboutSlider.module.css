@@ -1,0 +1,69 @@
+.parent{
+    position: relative;
+    width: 1100px;
+    margin:0 auto;
+    }
+
+.leftArrowStyle {
+    position: absolute;
+    background-color: #ded6c9;
+    opacity: 0.8;
+    border-radius: 100px;
+    padding: 10px;
+    width: 70px;
+    border: 0;
+    top: 50%;
+    transform: translate(0,-50%);
+    left: -70px;
+    font-size: 45px;
+    font-weight: 100;
+    color: #6e6e6e;
+    z-index: 1;
+    cursor: pointer;
+}
+
+.rightArrowStyle {
+    position: absolute;
+    background-color: #ded6c9;
+    opacity: 0.7;
+    border-radius: 100px;
+    padding: 10px;
+    width: 70px;
+    border: 0;
+    top: 50%;
+    transform: translate(0,-50%);
+    right: -70px;
+    font-size: 45px;
+    color: #6e6e6e;
+    z-index: 1;
+    cursor: pointer;
+}
+
+.window {
+    position: relative;
+    width: 1100px;
+    height: 300px;
+    overflow: hidden;
+  }
+
+.row {
+    position: absolute;
+    top: 40px;
+    left: 0px;
+    display: flex;
+    transition: all 1s ease;
+  }
+  
+.image {
+    display: flex;
+    justify-content: center;
+    width: 190px;
+    height: 190px;
+    padding: 15px;
+  }
+  .pager{
+    position: absolute;
+    top:790px;
+    right: 425px;
+    color: #838383;
+  } 
